@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/exportation.png</file>
+        <file>img/importer.png</file>
+        <file>img/supprimer.png</file>
+        <file>img/plus.png</file>
+        <file>img/automatique.png</file>
+        <file>img/client.ico</file>
+        <file>img/manual.png</file>
+        <file>img/start.png</file>
+        <file>img/stop.png</file>
+    </qresource>
+</RCC>

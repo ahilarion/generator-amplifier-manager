@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>window</class>
+ <widget class="QMainWindow" name="window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>841</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="changeButton">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>10</y>
+      <width>61</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                    font-size: 14px;
+					border: 1px solid #C9C9C9;
+                    text-transform: uppercase;
+					font: 500;
+                    color: #666;
+                    background-color: transparent;
+}
+
+QPushButton:hover{
+	 background-color: #BEF0B9;
+}
+
+QPushButton:pressed{
+	color: lightred;
+}
+
+QPushButton:disabled{
+	 background-color: #dddddd;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="img.qrc">
+      <normaloff>:/img/update.png</normaloff>:/img/update.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="ampli2G">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>821</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QGroupBox" name="generator">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Fréquence : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Amplitude :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ampGenLabel">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 dB</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="freqGenLabel">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 MHz</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ledGen">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #B93333;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="generator_2">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>10</y>
+       <width>531</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 1 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel2G_1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 4 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel2G_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 5 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel2G_5">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 2 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel2G_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel2G_6">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel2G_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>100</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(127, 127, 127);</string>
+      </property>
+      <property name="text">
+       <string>Voie 6 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>60</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 3 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Bande de fréquence :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="freq2G">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>700 MHz</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="led2G">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>14</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #B93333;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>20</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Diode 1 :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Diode 2 :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="diodeLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>21</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>[A]</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="diodeLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>21</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>[A]</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="ampli5G">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>821</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QGroupBox" name="generator_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>10</y>
+       <width>531</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 1 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel5G_1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 3 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel5G_3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 4 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel5G_4">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Voie 2 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="channel5G_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>0 mW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>Bande de fréquence :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="freq5G">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(110, 110, 110);</string>
+      </property>
+      <property name="text">
+       <string>2.6-3.3 GHz</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="led5G">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>10</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #B93333;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="infos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>821</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="infosLabel">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>0</y>
+       <width>671</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(110, 110, 110);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                    font-size: 14px;
+					border: 1px solid #C9C9C9;
+                    text-transform: uppercase;
+					font: 500;
+                    color: #666;
+                    background-color: transparent;
+}
+
+QPushButton:hover{
+	 background-color: #BEF0B9;
+}
+
+QPushButton:pressed{
+	color: lightred;
+}
+
+QPushButton:disabled{
+	 background-color: #dddddd;
+}</string>
+    </property>
+    <property name="text">
+     <string>Lancer le serveur</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+                    font-size: 14px;
+					border: 1px solid #C9C9C9;
+                    text-transform: uppercase;
+					font: 500;
+                    color: #666;
+                    background-color: transparent;
+}
+
+QPushButton:hover{
+	 background-color: #BEF0B9;
+}
+
+QPushButton:pressed{
+	color: lightred;
+}
+
+QPushButton:disabled{
+	 background-color: #dddddd;
+}</string>
+    </property>
+    <property name="text">
+     <string>Eteindre le serveur</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="portSpin_Generator">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 1px solid #C9C9C9;
+font: 12pt &quot;Segoe UI&quot;;
+	background-color: transparent;
+	padding-left: 5px;
+	color:#666;</string>
+    </property>
+    <property name="maximum">
+     <number>65535</number>
+    </property>
+    <property name="value">
+     <number>5000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #C9C9C9;
+background-color: #DDDDDD;
+color:#666;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Port Générateur&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="portSpin_Amp4G">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 1px solid #C9C9C9;
+font: 12pt &quot;Segoe UI&quot;;
+	background-color: transparent;
+	padding-left: 5px;
+	color:#666;</string>
+    </property>
+    <property name="maximum">
+     <number>65535</number>
+    </property>
+    <property name="value">
+     <number>5000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>60</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #C9C9C9;
+background-color: #DDDDDD;
+color:#666;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Port Amplificateur 4G&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="portSpin_Amp5G">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 1px solid #C9C9C9;
+font: 12pt &quot;Segoe UI&quot;;
+	background-color: transparent;
+	padding-left: 5px;
+	color:#666;</string>
+    </property>
+    <property name="maximum">
+     <number>65535</number>
+    </property>
+    <property name="value">
+     <number>5000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #C9C9C9;
+background-color: #DDDDDD;
+color:#666;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Port Amplificateur 5G&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="portSpin_XPort">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>60</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 1px solid #C9C9C9;
+font: 12pt &quot;Segoe UI&quot;;
+	background-color: transparent;
+	padding-left: 5px;
+	color:#666;</string>
+    </property>
+    <property name="maximum">
+     <number>65535</number>
+    </property>
+    <property name="value">
+     <number>5000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>60</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #C9C9C9;
+background-color: #DDDDDD;
+color:#666;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Port XPort&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
